@@ -1,8 +1,11 @@
 Thanks to Discord user @Gotbread#2417 (and others as well, from the embedded systems discord server) for their kind help with the code and technical guidance throughout the project.
 
+As of the time of writing this readme, there are little to no documented ways to use an L293D shield with an esp32, although there is an article on how to use an L293D ic with esp32, and a github page that uses nodemcu and esp8266 with the shield. Every other article, video or forum have used the `AFmotor.h` library.
 This is a simple project that aims to run 1 motor using an ESP32 (ESP-wroom-32) and a HW-130 motor driver shield (L293D motor driver). 
-The existing solution forced users to include the infamous `AFmotor.h` library, which unfortunately, does **NOT** work with ESP32 due to differences in hardware.
+The previous solution forced users to include the infamous `AFmotor.h` library, which unfortunately, does **NOT** work with ESP32 due to differences in hardware.
 Our project does **NOT** use any predefined library. 
+
+As of the time of writing this readme, there are little to no documented ways to use an L293D shield with an esp32, although there is an article on how to use an L293D ic with esp32, and a github page that uses nodemcu and esp8266 with the shield. Every other article, video or forum have used the `AFmotor.h` library.
 
 **---IMPORTANT---**
 - We are using an external power supply, which is a 5v 2A(max) charging brick, and thus the jumper on the shield was **__REMOVED__**.
