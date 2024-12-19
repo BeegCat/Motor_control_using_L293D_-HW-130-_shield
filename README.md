@@ -14,9 +14,9 @@ As of the time of writing this readme, there are little to no documented ways to
 - The motors used here were geared **DC motors**, voltage rating unknown. You might want to experiment the motor's performance with capacitors connected at the motor's terminals.
 - Please verify with the datasheets for the ICs in your shield. Our shield is a cheap chinese knock-off but we referred the [official Adafruit motor shield](https://github.com/adafruit/Adafruit-Motor-Shield-library) due to the stark similarities involved with the hardware.
 - It is important to connect the pin labelled as `5v` at the bottom of the shield. This goes to the Vcc of the shift register.
-- We cannot guarentee the proper functioning of the circuit if you opt to use the esp32's on board 5v pin, and personally I do not recommend to use it for such an application that could be current intensive.
+- We cannot guarantee the proper functioning of the circuit if you opt to use the esp32's on board 5v pin, and personally I do not recommend to use it for such an application that could be current intensive.
 - Make sure to use a power supply that can deliver enough amperage if you are using many motors at once, although the L293D's max tolerance is ~1A per IC.
-- The shield should work fine with the 3.3v logic levels of esp32, if it doesnt, cross check all your connections.
+- The shield should work fine with the 3.3v logic levels of esp32, if it doesn't, cross check all your connections.
 - The code is written according to the connections made in the below diagram.
 
 ![circuit diagram](https://github.com/user-attachments/assets/91a676e2-481f-4c19-b41e-186fa66f2386)
